@@ -13,10 +13,11 @@ Psql take a schema like a 'class' to define all data tables
 ## Commands to...
 - **Create a database:**
     - create database :name; 
+    - to switch database \c databaseName
 - **Show:**
     - databases: \l 
     - roles: \du
-    - tables: \d schema.table
+    - tables: \d schema.table || \dt
     - schemas: \dn
 - **Create:**
     - roles: create user *bob* with password '*mypass*';
