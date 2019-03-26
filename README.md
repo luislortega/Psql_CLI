@@ -10,20 +10,11 @@ Psql take a schema like a 'class' to define all data tables
   - Create your database
   - Create your tables
 
-## Commands to...
-- **Create a database:**
-    - create database :name; 
-    - to switch database \c databaseName
-- **Show:**
-    - databases: \l 
-    - roles: \du
-    - tables: \d schema.table || \dt
-    - schemas: \dn
-- **Create:**
-    - roles: create user *bob* with password '*mypass*';
-    - schemas: create schema *friends*;
-    - tables: create table *friends*.*test*(firstname CHAR(15), lastname CHAR(15));
-- **Insert:**
-    - insert into *friends*.*test*('Luis Gerardo', 'Leon Ortega');
-- **Select**
-    - select * from *friends*.*test*;
+## Commands 
+\c $dbname	Connect to database $dbname.	\c blog_development
+\d	Describe available relations	
+\d $name Describe relation $name	\d users
+\?	List of console commands and options	
+\h	List of available SQL syntax Help topics	
+\h $topic	SQL syntax Help on syntax for $topic	\h INSERT
+\q	Quit	
